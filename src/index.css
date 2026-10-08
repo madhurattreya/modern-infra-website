@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-headline: 'Barlow Semi Condensed', 'Barlow', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-industrial-navy: #0F172A;
+  --color-industrial-slate: #1E293B;
+  --color-industrial-steel: #334155;
+  --color-industrial-amber: #D97706;
+  --color-industrial-gold: #F59E0B;
+  --color-industrial-border: #CBD5E1;
+  --color-industrial-border-light: #E2E8F0;
+  --color-industrial-surface: #FFFFFF;
+  --color-industrial-bg: #F8FAFC;
+}
+
+/* Base styles: Solid, authoritative structural engineering layout */
+@layer base {
+  * {
+    border-radius: 0 !important; /* Rigid structural geometry - heavy plate steel */
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #F8FAFC;
+    color: #334155;
+    font-family: 'Inter', 'Barlow', sans-serif;
+    line-height: 1.625;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow Semi Condensed', 'Barlow', sans-serif;
+    letter-spacing: -0.015em;
+    color: #0F172A;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-weight: 800;
+    line-height: 1.08;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-weight: 800;
+    line-height: 1.15;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    color: #475569;
+  }
+}
+
+.font-headline {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.font-industrial {
+  font-family: 'Barlow', sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* Technical Drafting Grid Patterns for Engineering & Architecture */
+.blueprint-grid-light {
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.blueprint-grid-dense-light {
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Mechanical Gear Keyframe Animations (Subtle manufacturing movement) */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse-slow {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 35s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+  animation: spin-reverse-slow 40s linear infinite;
+}
+
+/* Grounded Industrial Shadows and Borders */
+.shadow-industrial-sm {
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+}
+
+.shadow-industrial {
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+}
+
+.shadow-industrial-lg {
+  box-shadow: 0 10px 20px -3px rgba(15, 23, 42, 0.07), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #94A3B8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D97706;
+}

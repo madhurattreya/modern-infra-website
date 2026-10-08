@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none">
+  <!-- Blueprint Grid Accent -->
+  <rect x="0" y="0" width="320" height="64" fill="#0B0F17" rx="0"/>
+  
+  <!-- Geometric Steel Beam Icon -->
+  <g transform="translate(8, 8)">
+    <!-- Outer Frame -->
+    <rect x="0" y="0" width="48" height="48" fill="#162032" stroke="#1E293B" stroke-width="1.5"/>
+    
+    <!-- Steel I-Beam Cross Section in Amber -->
+    <path d="M12 12 H36 V17 H27 V31 H36 V36 H12 V31 H21 V17 H12 Z" fill="#F59E0B"/>
+    
+    <!-- Crosshair markers -->
+    <line x1="2" y1="2" x2="8" y2="2" stroke="#F59E0B" stroke-width="1.5"/>
+    <line x1="2" y1="2" x2="2" y2="8" stroke="#F59E0B" stroke-width="1.5"/>
+    <line x1="46" y1="46" x2="40" y2="46" stroke="#F59E0B" stroke-width="1.5"/>
+    <line x1="46" y1="46" x2="46" y2="40" stroke="#F59E0B" stroke-width="1.5"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="68" y="32" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="22" fill="#FFFFFF" letter-spacing="-0.5">
+    MODERN<tspan fill="#F59E0B">INFRA</tspan>
+  </text>
+  <text x="68" y="47" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="9" fill="#94A3B8" letter-spacing="2">
+    STEEL BUILDING SOLUTIONS // [ISO 9001]
+  </text>
+  
+  <!-- Status dot -->
+  <circle cx="304" cy="18" r="3" fill="#10B981"/>
+</svg>
