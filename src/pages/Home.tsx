@@ -731,6 +731,16 @@ export const Home: React.FC<HomeProps> = ({ onOpenEstimator }) => {
 
       {/* 10. Interactive Estimator Banner (Warm Light Industrial Tone) */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 border-b border-[#CBD5E1] bg-[#FFFBEB] relative overflow-hidden">
+        {/* Subtle architectural steel background texture */}
+        <div className="absolute inset-0 z-0 pointer-events-none select-none opacity-35">
+          <img
+            src="/images/hero_steel_bg.jpg"
+            alt="Structural Steel Framing"
+            className="w-full h-full object-cover object-center filter brightness-85 contrast-125"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FFFBEB]/95 via-[#FFFBEB]/85 to-[#FFFBEB]/60" />
+        </div>
+
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 relative z-10">
           <div className="max-w-2xl space-y-3">
             <div className="text-xs font-sans text-[#B45309] tracking-wider uppercase font-bold flex items-center gap-2">
@@ -895,10 +905,20 @@ export const Home: React.FC<HomeProps> = ({ onOpenEstimator }) => {
       </section>
 
       {/* 13. Direct Contact & Dispatch Callout */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFFFF]">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFFFF] relative overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-[#F8FAFC] border border-[#CBD5E1] p-8 sm:p-12 shadow-industrial">
-            <div className="lg:col-span-7 space-y-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-[#F8FAFC] border border-[#CBD5E1] p-8 sm:p-12 shadow-industrial relative overflow-hidden">
+            {/* Subtle architectural background texture */}
+            <div className="absolute inset-0 z-0 pointer-events-none select-none opacity-35">
+              <img
+                src="/images/hero_steel_bg.jpg"
+                alt="Architectural steel framework"
+                className="w-full h-full object-cover object-center filter grayscale brightness-85 contrast-135"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#F8FAFC]/95 via-[#F8FAFC]/85 to-[#F8FAFC]/65" />
+            </div>
+
+            <div className="lg:col-span-7 space-y-4 relative z-10">
               <div className="text-xs font-sans text-[#D97706] font-bold tracking-wider uppercase flex items-center gap-2">
                 <span className="w-2 h-2 bg-[#D97706]" />
                 HAM ENGINEERING FABRICATION &amp; EXIM BUREAU

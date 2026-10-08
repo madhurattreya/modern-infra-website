@@ -25,17 +25,31 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEstimator }) => {
 
   return (
     <section className="relative min-h-[92vh] bg-[#FFFFFF] border-b border-[#E2E8F0] overflow-hidden flex items-center">
-      {/* Background blueprint grid for light theme */}
-      <div className="absolute inset-0 blueprint-grid-light opacity-60 pointer-events-none" />
-      
+      {/* Architectural structural steel background made darker and clearly visible */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
+        <img
+          src="/images/hero_steel_bg.jpg"
+          alt="Industrial Steel Structure Architectural Framework"
+          className="w-full h-full object-cover object-center opacity-70 sm:opacity-80 filter brightness-80 contrast-130 saturate-115"
+        />
+        {/* Subtle industrial steel tint layer to enrich the steel rafters */}
+        <div className="absolute inset-0 bg-[#0F172A]/15 pointer-events-none" />
+        {/* Directional horizontal gradient: high-contrast clean fade on text side, clear reveal on structural side */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FFFFFF]/92 via-[#FFFFFF]/75 to-[#FFFFFF]/35 sm:from-[#FFFFFF]/90 sm:via-[#FFFFFF]/60 sm:to-[#FFFFFF]/25" />
+        {/* Vertical blending gradients for seamless transition to navbar and next section */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FFFFFF]/75 via-transparent to-[#FFFFFF]/90" />
+        {/* Blueprint precision grid seamlessly layered over steel rafters */}
+        <div className="absolute inset-0 blueprint-grid-light opacity-30" />
+      </div>
+
       {/* Ambient background rotating mechanical gear illustration */}
-      <div className="absolute -top-24 -right-24 w-96 h-96 opacity-[0.05] pointer-events-none select-none text-[#0F172A]">
+      <div className="absolute -top-24 -right-24 w-96 h-96 opacity-[0.04] pointer-events-none select-none text-[#0F172A] z-1">
         <svg viewBox="0 0 100 100" className="w-full h-full animate-spin-slow" fill="currentColor">
           <path d="M50 35c-8.28 0-15 6.72-15 15s6.72 15 15 15 15-6.72 15-15-6.72-15-15-15zm0-25c-2.4 0-4.66.42-6.77 1.18l-2.44-6.42-6.58 2.39 2.44 6.42c-3.7 2.13-6.85 5.16-9.14 8.78l-6.42-2.44-2.39 6.58 6.42 2.44c-.76 2.11-1.18 4.37-1.18 6.77s.42 4.66 1.18 6.77l-6.42 2.44 2.39 6.58 6.42-2.44c2.29 3.62 5.44 6.65 9.14 8.78l-2.44 6.42 6.58 2.39 2.44-6.42c2.11.76 4.37 1.18 6.77 1.18s4.66-.42 6.77-1.18l2.44 6.42 6.58-2.39-2.44-6.42c3.7-2.13 6.85-5.16 9.14-8.78l6.42 2.44 2.39-6.58-6.42-2.44c.76-2.11 1.18-4.37 1.18-6.77s-.42-4.66-1.18-6.77l6.42-2.44-2.39-6.58-6.42 2.44c-2.29-3.62-5.44-6.65-9.14-8.78l2.44-6.42-6.58-2.39-2.44 6.42c-2.11-.76-4.37-1.18-6.77-1.18z"/>
         </svg>
       </div>
 
-      <div className="absolute -bottom-20 -left-20 w-80 h-80 opacity-[0.04] pointer-events-none select-none text-[#D97706]">
+      <div className="absolute -bottom-20 -left-20 w-80 h-80 opacity-[0.03] pointer-events-none select-none text-[#D97706] z-1">
         <svg viewBox="0 0 100 100" className="w-full h-full animate-spin-reverse-slow" fill="currentColor">
           <path d="M50 35c-8.28 0-15 6.72-15 15s6.72 15 15 15 15-6.72 15-15-6.72-15-15-15zm0-25c-2.4 0-4.66.42-6.77 1.18l-2.44-6.42-6.58 2.39 2.44 6.42c-3.7 2.13-6.85 5.16-9.14 8.78l-6.42-2.44-2.39 6.58 6.42 2.44c-.76 2.11-1.18 4.37-1.18 6.77s.42 4.66 1.18 6.77l-6.42 2.44 2.39 6.58 6.42-2.44c2.29 3.62 5.44 6.65 9.14 8.78l-2.44 6.42 6.58 2.39 2.44-6.42c2.11.76 4.37 1.18 6.77 1.18s4.66-.42 6.77-1.18l2.44 6.42 6.58-2.39-2.44-6.42c3.7-2.13 6.85-5.16 9.14-8.78l6.42 2.44 2.39-6.58-6.42-2.44c.76-2.11 1.18-4.37 1.18-6.77s-.42-4.66-1.18-6.77l6.42-2.44-2.39-6.58-6.42 2.44c-2.29-3.62-5.44-6.65-9.14-8.78l2.44-6.42-6.58-2.39-2.44 6.42c-2.11-.76-4.37-1.18-6.77-1.18z"/>
         </svg>
